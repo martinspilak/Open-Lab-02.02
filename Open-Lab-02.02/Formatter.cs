@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 
 namespace Open_Lab_02._02
 {
@@ -6,7 +7,8 @@ namespace Open_Lab_02._02
     {
         public void Format(double[] numbers)
         {
-            throw new NotImplementedException();
+            foreach (var number in numbers);
+            Console.Write(number.ToString("N2", CultureInfo.InvariantCulture) + " ");
         }
     }
 }
